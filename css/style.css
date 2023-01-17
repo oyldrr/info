@@ -1,17 +1,14 @@
-/*
-
-Letter Template 
-
-https://templatemo.com/tm-510-letter
-
-*/
-
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 24px;
+	font-size: 1.5em;
 	font-weight: 300;
 	overflow-x: hidden;
-	
+	animation:fadeInUp 1s ease backwards;
+}
+
+@keyframes fadeInUp{
+  0%{transform:translate(0px, 100px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
 }
 
 a, button {
@@ -24,18 +21,24 @@ button:focus {
 }
 
 a:hover {
-	color: #FFFF00;
-	text-decoration: underline;
+	color: #fff;
+	text-decoration: none;
 }
 a:focus {
 	text-decoration: none;
 	outline: none;
 }
 
-h1 {
-	color: #FFFFFF;
-	font-size: 4rem;	
-}
+.typewrite {
+    color: #FFFFFF;
+	font-size: 3em;
+    font-family: monospace;
+    max-width: fit-content;
+    overflow: hidden; 
+    white-space: nowrap; 
+    letter-spacing: .1em; 
+  }
+  
 
 p {
 	color: #FFFFFF;	
@@ -100,17 +103,19 @@ p {
 	color: #FFFFFF;
 }
 .tm-btn-subscribe {
-	background-color: #006699;
+	background: none;
 	border-radius: .5rem;
-    border-color: white;
+    border-color: #fff;
 	padding: 0.75rem 1.6rem;
     font-weight: 300;
     font-size: 1.4rem;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.tm-btn-subscribe:hover {
-    background-color: #055278;
+.tm-btn-subscribe:hover { 
+    backdrop-filter: blur(10px);
+    color: rgb(8, 118, 173);
 }
 
 .tm-social-icons-container {
@@ -124,6 +129,12 @@ p {
     width: 50px;
     height: 50px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.tm-social-link:hover {
+    background-color: rgba(13, 74, 105, .4);
+    backdrop-filter: blur(10px);
 }
 
 .fa {
@@ -160,6 +171,7 @@ p {
     top: 0px;
     left: 0px;
     color: transparent;
+    filter: blur(5px);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
@@ -232,12 +244,17 @@ p {
 
 @media screen and (max-width: 1140px) { 
     .cb-slideshow li div h3 { font-size: 140px }
+    .tm-content {background: none;}
 }
+
+@media screen and (max-width: 850px) { 
+    .typewrite {font-size: 2em }
+}
+
 @media screen and (max-width: 600px) { 
     .cb-slideshow li div h3 { font-size: 80px }
-	.tm-content {
-		margin-top: 80px;
-	}
+	.tm-content {margin-top: 80px;}
+    .typewrite {font-size: 1.7em }
 }
 
 @media screen and (max-width: 576px) { 
@@ -246,4 +263,8 @@ p {
 	.tm-btn-subscribe {
 		margin-top: 20px;
 	}
+}
+
+@media screen and (max-width: 400px) { 
+    .typewrite {font-size: 1.2em }
 }
