@@ -77,6 +77,7 @@ p {
 }
 
 .tm-content {
+    margin-top: 10rem;
     z-index: 1001;
 }
 
@@ -264,6 +265,7 @@ p {
 }
 
 @media screen and (max-width: 850px) { 
+    .tm-content {margin-left: -100%;}
     .typewrite {font-size: 2em }
     .footer-link {font-size : .7em}
 }
@@ -283,4 +285,5 @@ p {
 
 @media screen and (max-width: 400px) { 
     .typewrite {font-size: 1.2em }
+    .tm-social-icons-container {font-size: .8em}
 }
