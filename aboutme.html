@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>oyldrr info</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tooltip.css">
+  
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <script language=javascript>
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = "oyldrr - oğuzhan yıldırır ";
+        var res = " ";
+        var speed = 150;
+        var pos = val;
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
+		
+	</head>
+
+	<body class="fadeInDown">
+
+			<div id="particles-js"></div>
+		
+			<ul class="cb-slideshow">
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+
+			<div class="container-fluid slide">
+				<div class="row cb-slideshow-text-container ">
+					<div class= "tm-content col-xl-9 col-sm-8 col-xs-8 ml-auto section aboutme">
+                            <div class="mb-2"> 
+                                <h1>[EN] Who am I? </h1>
+
+                                <p> &nbsp;&nbsp;19 y.o computer sciences student which is trying harder to become better about programming. Especially, interested about web but also I'm trying to develop my Unity Game Engine skills.
+
+                                <p> &nbsp;&nbsp;I couldn't get a chance to have a full-time job experience before. But I worked as a freelancer on "bi'onluk" (turkish freelancer website). I was editing photos & videos to make money. Also I am working in university's part-time job at computer labs for 1.5 years. But its not a problem for another part-time job. It doesnt take a lot of time. 
+
+                                <p> &nbsp;&nbsp;I am making youtube videos, going gym, playing guitar, acting, illusion etc. just for hobby & fun.
+                                </p>
+                                <br>
+                                <h1>[TR] Ben kimim? </h1>
+
+                                <p> &nbsp;&nbsp;19 yaşında, iyi bir yazılımcı olmaya çalışan bilgisayar mühendisliği öğrencisi. Özellikle web hakkında ilgiliyim ama Unity Oyun Motorunda da kendimi geliştirmeye çalışıyorum. 
+
+                                <p> &nbsp;&nbsp;Daha önce bir tam zamanlı çalışma deneyimi kazanma şansım olmadı. Ancak "bi'onluk" üzerinden freelancer olarak çalıştım. Harçlığımı çıkarmak için fotoğraflar ve videolar düzenliyordum. Ayrıca yaklaşık 1.5 senedir üniversitenin bilgisayar laboratuvarlarında yarı zamanlı olarak çalışıyorum. Ama bu da diğer bir yarı zamanlı işe engel değil. Çok fazla zamanımı almıyor. 
+
+                                <p> &nbsp;&nbsp;Sadece hobi ve eğlence için youtube video düzenleme, spor, gitar, oyunculuk, illüzyon vb. ile ilgileniyorum.
+                                </p>
+                            </div>
+						</div>
+					
+					<div class="footer-link">
+                        <p class="item_text mb-3">
+							<a href="index.html">
+                                <i class="fa fa-arrow-up"></i>
+                                <br><strong>home</strong>
+                            </a>
+						</p>
+						<p>Copyright © 2023 oyldrr</p>
+					</div>
+
+				</div>	
+			</div>	
+			
+	</body>
+
+	<script type="text/javascript" src="js/particles.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/typewriter.js"></script>
+</html>
