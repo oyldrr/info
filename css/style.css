@@ -139,7 +139,7 @@ p {
     font-weight: 100;
     margin-top: 5rem;
     margin-right: auto;
-    background-color: rgba(100, 187, 228, 0.4);
+    background-color: rgba(135, 209, 244, 0.4);
     border-radius: 10px;
     box-shadow:
     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -273,7 +273,6 @@ p {
 
 @media screen and (max-width: 600px) { 
     .cb-slideshow li div h3 { font-size: 80px }
-	.tm-content {margin-top: 80px;}
     .typewrite {font-size: 1.7em } 
 }
 
