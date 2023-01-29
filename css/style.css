@@ -137,7 +137,6 @@ p {
     font-size: 1rem;
     font-family: roboto;
     font-weight: 100;
-    margin-top: 5rem;
     margin-right: auto;
     background-color: rgba(135, 209, 244, 0.4);
     border-radius: 10px;
@@ -278,6 +277,7 @@ p {
 
 @media screen and (max-width: 576px) { 
     .cb-slideshow li div h3 { font-size: 80px }
+    .aboutme {margin-top: 0rem; height: auto;}
 	.tm-btn-subscribe {
 		margin-top: 20px;
 	}
