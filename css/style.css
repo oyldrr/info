@@ -278,12 +278,29 @@ p {
 @media screen and (max-width: 576px) { 
     .cb-slideshow li div h3 { font-size: 80px }
     .aboutme {margin-top: 0rem; height: auto;}
-	.tm-btn-subscribe {
-		margin-top: 20px;
-	}
+	.tm-btn-subscribe { margin-top: 20px;}
+}
+
+@media screen and (max-width: 450px) { 
+    .typewrite {font-size: 1.5rem;}
+    .tm-social-link {width: 40px;}
 }
 
 @media screen and (max-width: 400px) { 
     .typewrite {font-size: 1.2em }
     .tm-social-icons-container {font-size: .8em}
+}
+
+@media screen and (max-width: 375px){
+    .typewrite {font-size: 1em}
+    .tm-content {font-size: .9em;}
+    .tm-btn-subscribe {font-size: .7em; margin: 0;}
+    .tm-social-link {width: 30px;}
+}
+
+@media screen and (max-width: 319px){
+    .typewrite {font-size: 1.1em}
+    .tm-content {font-size: .7em;}
+    .tm-btn-subscribe {font-size: .7em; margin: 0;}
+    .tm-social-link {width: 11%;}
 }
