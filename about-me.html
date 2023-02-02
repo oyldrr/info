@@ -1,72 +1,120 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Oğuzhan Yıldırır Information Website">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Developer, Freelance, Information, About me, Oğuzhan Yıldırır, Personal Website, Bilgi, Hakkımda, Kimdir">
-  <meta name="author" content="Oğuzhan Yıldırır">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Oğuzhan Yıldırır Information Website">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, Frontend Developer, Freelance, Information, About me, Oğuzhan Yıldırır, Personal Website, Bilgi, Hakkımda, Kimdir">
+    <meta name="author" content="Oğuzhan Yıldırır">
 
-  <title>oyldrr - oğuzhan yıldırır</title>
+    <title>oyldrr - oğuzhan yıldırır</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
-  <link rel="stylesheet" href="css/demo.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/tooltip.css">
-  
-  <script type="text/javascript" src="js/script.js"></script>		
-	</head>
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tooltip.css">
 
-	<body class="fadeInDown">
+    <script type="text/javascript" src="js/script.js"></script>
 
-			<div id="particles-js"></div>
-		
-			<ul class="cb-slideshow">
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	        </ul>
+    <script language=javascript>
+        var rev = "fwd";
+        function titlebar(val) {
+            var msg = "oyldrr - oğuzhan yıldırır";
+            var res = " ";
+            var speed = 100;
+            var pos = val;
+            var le = msg.length;
+            if (rev == "fwd") {
+                if (pos < le) {
+                    pos = pos + 1;
+                    scroll = msg.substr(0, pos);
+                    document.title = scroll;
+                    timer = window.setTimeout("titlebar(" + pos + ")", speed);
+                }
+                else {
+                    rev = "bwd";
+                    timer = window.setTimeout("titlebar(" + pos + ")", speed);
+                }
+            }
+            else {
+                if (pos > 0) {
+                    pos = pos - 1;
+                    var ale = le - pos;
+                    scrol = msg.substr(ale, le);
+                    document.title = scrol;
+                    timer = window.setTimeout("titlebar(" + pos + ")", speed);
+                }
+                else {
+                    rev = "fwd";
+                    timer = window.setTimeout("titlebar(" + pos + ")", speed);
+                }
+            }
+        }
+        titlebar(0);
+    </script>
 
-			<div class="container-fluid slide">
-				<div class="row cb-slideshow-text-container ">
-					<div class= "tm-content col-xl-9 col-sm-8 col-xs-7 ml-auto section aboutme">
-                            <div> 
-                                <h1>Who am I? </h1>
+</head>
 
-                                <p> &nbsp;&nbsp;I am a 19 years old computer engineering student who is trying harder to become better at programming. I am particularly interested in web development, but I am also working to improve my skills in Unity Game Engine. 
-                                    
-                                <p> &nbsp;&nbsp;I have not yet had the opportunity to gain full-time job experience, but I have worked as a freelancer on the Turkish website "bi'onluk" editing photos and videos to make money. I have also been working in a part-time job at the university's computer labs for 1.5 years, but this does not take up much time, so it would not be a problem for me to take on another part-time job. 
+<body class="fadeInDown">
 
-                                <p> &nbsp;&nbsp;In my free time, I enjoy making YouTube videos, going to the gym, playing the guitar, acting, and doing illusions as hobbies and for fun. 
-                                </p>
-                            </div>
-						</div>
-					
-					<div class="footer-link">
-                        <p class="item_text mb-3">
-                            <a href="index">
-                                <i class="fa fa-arrow-up"></i>
-                                <br><strong>home</strong>
-                            </a>
-                        </p>
-						<p>Copyright © 2023 oyldrr</p>
-					</div>
+    <div id="particles-js"></div>
 
-				</div>	
-			</div>	
-			
-	</body>
+    <ul class="cb-slideshow">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
-	<script type="text/javascript" src="js/particles.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/typewriter.js"></script>
+    <div class="container-fluid slide">
+        <div class="row cb-slideshow-text-container ">
+            <div class="tm-content col-xl-9 col-sm-8 col-xs-7 ml-auto section aboutme">
+                <div>
+                    <h1>Who am I? </h1>
+
+                    <p> &nbsp;&nbsp;I am a 19 years old computer engineering student who is trying harder to become
+                        better at programming. I am particularly interested in web development, but I am also working to
+                        improve my skills in Unity Game Engine.
+
+                    <p> &nbsp;&nbsp;I have not yet had the opportunity to gain full-time job experience, but I have
+                        worked as a freelancer on the Turkish website "bi'onluk" editing photos and videos to make
+                        money. I have also been working in a part-time job at the university's computer labs for 1.5
+                        years, but this does not take up much time, so it would not be a problem for me to take on
+                        another part-time job.
+
+                    <p> &nbsp;&nbsp;In my free time, I enjoy making YouTube videos, going to the gym, playing the
+                        guitar, acting, and doing illusions as hobbies and for fun.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-link">
+                <p class="item_text mb-3">
+                    <a href="index">
+                        <i class="fa fa-arrow-up"></i>
+                        <br><strong>home</strong>
+                    </a>
+                </p>
+                <p>Copyright © 2023 oyldrr</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/typewriter.js"></script>
+
 </html>
