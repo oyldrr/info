@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Oğuzhan Yıldırır Information Website">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Developer, Freelance, Information, About me, Oğuzhan Yıldırır, Personal Website">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Developer, Freelance, Information, About me, Oğuzhan Yıldırır, Personal Website, Bilgi, Hakkımda, Kimdir">
   <meta name="author" content="Oğuzhan Yıldırır">
 
-  <title>info</title>
+  <title>oyldrr - oğuzhan yıldırır</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -20,45 +20,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/tooltip.css">
   
-  <script type="text/javascript" src="js/script.js"></script>
-
-  <script language=javascript>
-    var rev = "fwd";
-    function titlebar(val){
-        var msg  = "oyldrr - oğuzhan yıldırır ";
-        var res = " ";
-        var speed = 100;
-        var pos = val;
-        var le = msg.length;
-        if(rev == "fwd"){
-            if(pos < le){
-                pos = pos+1;
-                scroll = msg.substr(0,pos);
-                document.title = scroll;
-                timer = window.setTimeout("titlebar("+pos+")",speed);
-            }
-            else {
-                rev = "bwd";
-                timer = window.setTimeout("titlebar("+pos+")",speed);
-            }
-        }
-        else {
-            if(pos > 0) {
-                pos = pos-1;
-                var ale = le-pos;
-                scrol = msg.substr(ale,le);
-                document.title = scrol;
-                timer = window.setTimeout("titlebar("+pos+")",speed);
-            }
-            else {
-                rev = "fwd";
-                timer = window.setTimeout("titlebar("+pos+")",speed);
-            }
-        }
-    }
-    titlebar(0);
-</script>
-		
+  <script type="text/javascript" src="js/script.js"></script>		
 	</head>
 
 	<body class="fadeInDown">
